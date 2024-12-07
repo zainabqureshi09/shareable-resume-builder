@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue:regular" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+
+        <!-- Form Section -->
+        <form id="cv-form">
+            <h2>Personal Information</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+
+            <h2>Professional Summary</h2>
+            <textarea id="summary" placeholder="Brief professional summary"></textarea>
+
+            <h2>Last Education</h2>
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" required>
+
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" required>
+
+            <label for="education-start-date">Start Date:</label>
+            <input type="month" id="education-start-date" required>
+
+            <label for="education-end-date">End Date:</label>
+            <input type="month" id="education-end-date">
+
+            <h2>Skills</h2>
+            <textarea id="skills" placeholder="List of skills"></textarea>
+
+            <button type="submit">Generate CV</button>
+        </form>
+       
+
+        <!-- Preview Section -->
+        <div id="resume-preview">
+            <h2>Your CV Preview:</h2>
+            <div id="resume-content" contentEditable="true"></div>
+        </div>
+
+        <!-- Download Button -->
+        <div id="download-button-container" style="margin-top: 20px;">
+            <button id="download-resume" style="display: none;">Download Resume</button>
+        </div>
+
+        <!-- Sharing Link -->
+        <div id="sharing-link-container" style="margin-top: 20px;">
+            <p id="share-link" style="display: none;">Share your resume: <span id="generated-link"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>

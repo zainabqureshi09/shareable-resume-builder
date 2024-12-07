@@ -1,0 +1,110 @@
+/* General reset and basic styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+h1{
+  color: #0077cc;
+  text-align: center;
+}
+/* Container styling */
+.container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+form h2 {
+  margin-bottom: 10px;
+  color: #0077cc;
+  text-align: center;
+}
+
+/* Input and textarea styles */
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+}
+
+/* Button styles */
+button {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+}
+
+/* Resume preview styles */
+#resume-preview {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+}
+
+#resume-preview h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .container {
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  form {
+      gap: 1rem;
+  }
+
+  input, textarea {
+      font-size: 0.9rem;
+      padding: 8px;
+  }
+
+  button {
+      font-size: 0.9rem;
+      padding: 8px;
+  }
+
+  #resume-preview {
+      padding: 8px;
+  }
+}
